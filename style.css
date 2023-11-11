@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kenia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  background-color: transparent;
+  font-family: "Source Code Pro", monospace;
+}
+.navbar .container-fluid {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: rgb(238, 233, 226);
+}
+.catalogue {
+  display: flex;
+  width: -webkit-fill-available;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+}
+.navigation {
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 22px;
+}
+span {
+  background-color: transparent;
+}
+.card a {
+  text-decoration: none;
+  color: violet;
+}
+
+.card-text {
+  background-color: rgb(151, 136, 136);
+}
+.card-title {
+  background-color: rgb(151, 136, 136);
+  display: flex;
+  width: fit-content;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+  background-color: rgb(36, 36, 36);
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+  text-decoration: none;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.footer .col a:hover {
+  color: #8804adbc;
+}
+
+.footer .language-btn {
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  padding-top: 10px;
+  margin: 10px 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 10px solid black;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .card-text {
+    font-size: 10px;
+  }
+  .overlay {
+    font-size: 10px;
+    width: 275px;
+  }
+  .container {
+    width: -webkit-fill-available;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  .footer p{
+    font-size: 10px;
+  }
+}
+
+/* .............................. */
